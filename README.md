@@ -46,21 +46,6 @@ Each paper is represented as a JSON object with the following keys:
     - `end`: Ending character offset.
     - `text`: The surface text.
     - `ref_id`: A key linking to the corresponding entry in `ref_entries`.
-- **`bib_entries`**: A dictionary of bibliographic references where each key corresponds to a unique reference id. Each bibliographic entry includes:
-  - **`bib_entry_raw`**: The raw bibliographic reference string.
-  - **`contained_arXiv_ids`**: A list of linked arXiv papers, each with its own details such as id, text, start, and end offsets.
-  - **`contained_links`**: A list of embedded links with URL, link text, and character offsets.
-  - **`discipline`**: The scientific discipline of the cited paper.
-  - **`ids`**: An object with various identifiers:
-    - `open_alex_id`
-    - `sem_open_alex_id`
-    - `pubmed_id`
-    - `pmc_id`
-    - `doi`
-- **`ref_entries`**: A dictionary of non-textual content such as figures, tables, and formulas. Each reference entry includes:
-  - **`type`**: The type of content (e.g., formula, figure, table).
-  - **`caption`**: A caption for tables or figures, if applicable.
-  - **`latex`**: For formulas, this contains the LaTeX math representation.
 
 ---
 
